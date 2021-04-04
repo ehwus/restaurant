@@ -9,4 +9,8 @@ export class DomController {
     logo.className = 'logo';
     container.appendChild(logo);
   }
+
+  static addHTML(html) {
+    container.innerHTML += html;
+  }
 }
