@@ -1,9 +1,20 @@
 import Logo from './assets/logo.png';
 import { WelcomePage } from './welcomePage';
+import { Menu } from './menu';
+import { Booking } from './booking';
 
 const container = document.getElementById('container');
 
 export class DomController {
+  static render(subheadingText, bodyElement) {
+    DomController.resetHTML();
+    DomController.drawLogo();
+    DomController.addSubheading(subheadingText);
+    DomController.addLine();
+    DomController.addNav();
+    DomController.addBody(bodyElement);
+  }
+
   static drawLogo() {
     const logo = new Image();
     logo.src = Logo;
@@ -24,7 +35,11 @@ export class DomController {
   }
 
   static _getRoutes() {
-    return [{ name: 'HOME', element: WelcomePage }];
+    return [
+      { name: 'HOME', element: WelcomePage },
+      { name: 'MENU', element: Menu },
+      { name: 'BOOKING', element: Booking },
+    ];
   }
 
   static addSubheading(subheading) {
@@ -47,5 +62,10 @@ export class DomController {
       navBar.appendChild(link);
     });
     container.appendChild(navBar);
+  }
+
+  static addBody(newBody) {
+    newBody.className = 'containerBody';
+    container.appendChild(newBody);
   }
 }
