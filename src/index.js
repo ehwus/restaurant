@@ -1,6 +1,4 @@
 import './style.css';
-import { DomController } from './domController';
+import { WelcomePage } from './welcomePage';
 
-DomController.drawLogo();
-DomController.addHTML('<h1>Hello World!</h1>');
-DomController.resetHTML();
+WelcomePage.render();
