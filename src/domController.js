@@ -28,10 +28,10 @@ export class DomController {
   }
 
   static addSubheading(subheading) {
-    const subheading = document.createElement('h2');
-    subheading.className = 'subheading';
-    subheading.innerHTML = subheading;
-    container.appendChild(subheading);
+    const newSubheading = document.createElement('h2');
+    newSubheading.className = 'subheading';
+    newSubheading.innerHTML = subheading;
+    container.appendChild(newSubheading);
   }
 
   static addNav() {
