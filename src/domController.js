@@ -27,6 +27,13 @@ export class DomController {
     return [{ name: 'HOME', element: WelcomePage }];
   }
 
+  static addSubheading(subheading) {
+    const subheading = document.createElement('h2');
+    subheading.className = 'subheading';
+    subheading.innerHTML = subheading;
+    container.appendChild(subheading);
+  }
+
   static addNav() {
     const navBar = document.createElement('ul');
     navBar.className = 'navBar';

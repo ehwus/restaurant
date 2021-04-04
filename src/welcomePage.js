@@ -6,7 +6,7 @@ export class WelcomePage {
   static render() {
     DomController.resetHTML();
     DomController.drawLogo();
-    DomController.addHTML(`<h2>${subheading}</h2>`);
+    DomController.addSubheading(subheading);
     DomController.addLine();
     DomController.addNav();
   }

@@ -29,7 +29,6 @@ body {
   margin: auto;
   margin-top: 8%;
   color: white;
-  text-align: center;
 }
 
 #container hr {
@@ -41,6 +40,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+}
+
+.subheading {
+  text-align: center;
 }
 
 .navBar {
