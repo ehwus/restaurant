@@ -4,7 +4,6 @@ import Burger from './assets/burger.jpg';
 export class WelcomePage {
   static render() {
     const subheading = 'Welcome to the Roboto Bistro!';
-    console.log(WelcomePage._getBody());
     DomController.render(subheading, WelcomePage._getBody());
   }
 
