@@ -13,4 +13,8 @@ export class DomController {
   static addHTML(html) {
     container.innerHTML += html;
   }
+
+  static resetHTML() {
+    container.innerHTML = '';
+  }
 }
